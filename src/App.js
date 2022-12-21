@@ -25,18 +25,4 @@ function App() {
   </Router>
 }
 
-/*
-배포하기 
-1. 설치
-npm i gh-pages
-npm run build
-
-build를 실행하면 웹사이트의 production ready code를 생성한다.
-production ready란 코드가 압축되고 모든게 최적화 된다는 뜻이다.
-
-2. package.json에 추가
-"homepage" : "https://dol-e.github.io/레포지토리이름"
-
-*/
-
 export default App;
