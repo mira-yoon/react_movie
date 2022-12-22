@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
+import styles from "./Detail.module.css";
 
 /*
 useParam()
@@ -45,9 +46,11 @@ function Detail(){
   return (
     <>
       {loading ? (
-        <h1>Loading...</h1> 
+        <div className={styles.loader}>
+          <span>Loading...</span>
+        </div>
       ) : (
-        <div>
+        <div className={styles.container}>
           <h1>Detail</h1>
           <img src={movie.large_cover_image} alt={movie.title} />
           <h2>{movie.title}</h2>
